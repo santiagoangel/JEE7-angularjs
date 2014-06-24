@@ -4,7 +4,7 @@ JEE7-angularjs
 JEE7 web application with REST WS for CRUD operations in the backend and AngularJS in the frontend.
 
 
-##Prerequisite for frontend development using Node npm, Yeoman, grunt and bower:
+##Prerequisites for frontend development using Node npm, Yeoman, grunt and bower:
 
 ###Fedora 20
 
