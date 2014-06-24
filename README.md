@@ -16,6 +16,7 @@ JEE7 web application with REST WS for CRUD operations in the backend and Angular
 
 ##run in Development mode
 * npm install grunt-connect-proxy --save-dev
+* npm install imagemin
 * lauch-the-webapplication (in port 8080) 
 * npm install
 * bower install
