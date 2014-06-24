@@ -11,7 +11,7 @@ JEE7 web application with REST WS for CRUD operations in the backend and Angular
 * yum install npm
 * npm install -g yo
 * npm install -g generator-angular
-* npm install grunt-connect-proxy --save-dev
+* npm install -g grunt-connect-proxy --save-dev
 
 
 
