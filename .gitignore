@@ -1,0 +1,13 @@
+target
+*.class
+.DS_Store
+.directory
+.settings
+.gradle
+.classpath
+.project
+.tmp
+yo/.tmp
+yo/node_modules
+yo/bower_components
+yo/dist

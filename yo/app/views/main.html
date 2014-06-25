@@ -1,0 +1,38 @@
+<div class="jumbotron">
+  <h1>JEE7-angularjs</h1>
+  <p class="lead">
+    <i class="fa fa-html5 fa-5x"></i><br>
+    JEE7 web application with REST WS for CRUD operations in the backend and AngularJS in the frontend.
+  </p>
+</div>
+
+<h2>Control Panel</h2>
+<div class="hero-unit">
+    <p><span><a class="btn btn-lg btn-success" ng-click="retrieve()" title="Get customer data from WS.">RETRIEVE <i class="fa fa-table"></i></a></span> <span ng-show="view"><a class="btn btn-lg btn-danger" ng-click="clear()" title="Clear the results." >CLEAR <i class="fa fa-table"></i></a></span></p>
+    
+    
+</div>
+
+<div class="hero-unit" ng-show="view">
+      <h1>Customers: </h1>
+      <table border="1">
+          <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr ng-repeat="c in allcustomers">
+                  <td>{{c.customerId}}</td>
+                  <td>{{c.name}}</td>
+              </tr>
+              
+          </tbody>
+      </table>
+
+      
+      
+</div>
+
+
