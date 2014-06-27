@@ -16,7 +16,7 @@ JEE7 web application with REST WS for CRUD operations in the backend and Angular
 
 
 
-##run in Development mode
+##Run in Development mode
 * npm install grunt-connect-proxy --save-dev
 * mvn wildfly:run  #### lauch JBoss Wildfly 8 JEE7 application server(in port 8080) #### (or run the web application in your IDE)
 * npm install
