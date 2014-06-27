@@ -18,7 +18,16 @@ customersService.factory('Customers',function($resource){
 */
 
 angular.module('jee7angularjsApp').service('Customers', function Customers($resource){
-    return $resource('/jee7angularjs/ws/customers/',{},{
-        query: {method:'GET',isArray:true}
+    return $resource('/jee7angularjs/ws/customers/:id',{},{
+        query: {method:'GET',isArray:true},
+        get: {method:'GET',isArray:false},
+        save: {method:'POST',headers: {
+            'Content-Type': 'application/json'
+        },isArray:false},
+        edit: {method:'PUT',headers: {
+            'Content-Type': 'application/json'
+        },params: {id: '@id'},isArray:false}
+    
+    
     });
   });

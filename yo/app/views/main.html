@@ -8,31 +8,17 @@
 
 <h2>Control Panel</h2>
 <div class="hero-unit">
-    <p><span><a class="btn btn-lg btn-success" ng-click="retrieve()" title="Get customer data from WS.">RETRIEVE <i class="fa fa-table"></i></a></span> <span ng-show="view"><a class="btn btn-lg btn-danger" ng-click="clear()" title="Clear the results." >CLEAR <i class="fa fa-table"></i></a></span></p>
-    
+    <p><span><a class="btn btn-lg btn-primary" ng-click="read()" title="NOT YET IMPLEMENTED.">CREATE <i class="fa fa-table"></i> </a></span> 
+        <span><a class="btn btn-lg btn-success" ng-click="read()" title="Get customer data from WS.">READ <i class="fa fa-table"></i> </a></span> 
+        <span><a class="btn btn-lg btn-info" ng-click="update();" title="Update customer.">UPDATE <i class="fa fa-table"></i> </a></span> 
+        <span><a class="btn btn-lg btn-warning" ng-click="read()" title="NOT YET IMPLEMENTED.">DELETE <i class="fa fa-table"></i> </a></span> 
+        <span><a class="btn btn-lg btn-success" ng-show="loading"><i ng-show="loading" class="fa fa-spin fa-refresh"></i></a></span>
+        
+    </p>
+    <p class="alert alert-danger" ng-show="showerror"><span ng-show="showerror">{{errorMessage}} <i ng-show="showerror" class="fa fa-warning"></i></span></p>    
     
 </div>
 
-<div class="hero-unit" ng-show="view">
-      <h1>Customers: </h1>
-      <table border="1">
-          <thead>
-              <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr ng-repeat="c in allcustomers">
-                  <td>{{c.customerId}}</td>
-                  <td>{{c.name}}</td>
-              </tr>
-              
-          </tbody>
-      </table>
 
-      
-      
-</div>
-
+<div class="gridStyle" ng-grid="gridOptions"></div>
 

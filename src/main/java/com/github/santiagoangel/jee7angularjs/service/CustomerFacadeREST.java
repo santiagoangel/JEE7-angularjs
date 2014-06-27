@@ -45,6 +45,9 @@ public class CustomerFacadeREST extends AbstractFacade<Customer> {
     @Path("{id}")
     @Consumes({"application/xml", "application/json"})
     public void edit(@PathParam("id") Integer id, Customer entity) {
+        //set id before merge
+        //entity.setCustomerId(id);        
+        //getEntityManager().merge(entity);
         super.edit(entity);
     }
 
