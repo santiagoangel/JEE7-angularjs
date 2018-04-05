@@ -3,10 +3,12 @@ JEE7-angularjs
 
 JEE7 web application with REST WS for CRUD operations in the backend and AngularJS in the frontend.
 
+![preview](preview.png)
+
 
 ## Prerequisites for frontend development using Node npm, Yeoman, grunt and bower:
 
-### Fedora 20
+### Fedora
 
 * yum install npm
 * npm install -g yo
@@ -18,7 +20,7 @@ JEE7 web application with REST WS for CRUD operations in the backend and Angular
 
 ## run in Development mode
 * npm install grunt-connect-proxy --save-dev
-* mvn wildfly:run  #### lauch JBoss Wildfly 8 JEE7 application server(in port 8080) #### (or run the web application in your IDE)
+* mvn wildfly:run  #### launch JBoss Wildfly JEE application server(in port 8080) #### (or run the web application in your IDE)
 * npm install
 * bower install
 * grunt serve
